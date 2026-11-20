@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "size": 224,
+  "padding": 20,
+  "ink_threshold": 200,
+  "background_percentile": 75,
+  "polarity": "dark-on-light",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ]
+}

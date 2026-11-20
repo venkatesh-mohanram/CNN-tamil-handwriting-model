@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "model_version": "tamil-symbols-0.1.0",
+  "qualified": false,
+  "purpose": "experimental-manual-verification",
+  "files": {
+    "model.onnx": {
+      "sha256": "e1fcf8e321b0d89ace2090a998cb4f44f766efde92370ba5556edcea2d259f0c",
+      "size": 6135453
+    },
+    "labels.json": {
+      "sha256": "4e0d3c8f5418c621a342b14f1c76a5c23b6401b99b3101368cae2d7401f922f1",
+      "size": 120
+    },
+    "preprocessing.json": {
+      "sha256": "61e5095db699baa5b6302a3a07d81fdf3631b5d065188d02f579daf646046073",
+      "size": 234
+    },
+    "rejection.json": {
+      "sha256": "90507fe72c234d683115e7a4d1769081637d89e88d467e1823915a766559743a",
+      "size": 210848
+    },
+    "provenance.json": {
+      "sha256": "e2a1d6b0ef826bd184e453fe1f7a562418d55c1f75214ef9a1e41f67d122cec1",
+      "size": 91684
+    },
+    "evaluation.json": {
+      "sha256": "6ed3ca57e65790fd19ee9ebda5ec5a5ea9ab929e7f9e84c3c68a98e6026c318b",
+      "size": 74489
+    },
+    "source-release.json": {
+      "sha256": "4462692cc6592fc2e6cb80cd5b1d384a4f14059b6541758abe897da9d1b411fc",
+      "size": 926
+    }
+  }
+}

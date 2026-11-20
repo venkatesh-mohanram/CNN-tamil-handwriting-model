@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-14",
+  "supported_labels": [
+    "அ",
+    "ஆ",
+    "இ",
+    "ஈ",
+    "உ",
+    "ஊ",
+    "எ",
+    "ஏ",
+    "ஐ",
+    "ஒ",
+    "ஓ",
+    "ஔ",
+    "ஃ"
+  ],
+  "sources": [
+    {
+      "id": "mendeley-6zcpgchvmx-v1",
+      "name": "tamil-handwritten-character-carpus",
+      "version": 1,
+      "publisher_url": "https://data.mendeley.com/datasets/6zcpgchvmx/1",
+      "doi": "10.17632/6zcpgchvmx.1",
+      "download_url": "https://data.mendeley.com/public-files/datasets/6zcpgchvmx/files/65ceb9fa-66ff-4dfc-bba6-79dc9c04d5e8/file_downloaded",
+      "archive_filename": "tamil-alphabets-raw.rar",
+      "archive_size": 1436820585,
+      "archive_sha256": "e016b9a10c83922f60506b0c2cea218b23be98d87d8a8462a5601d6587d5a150",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Publisher version1 page explicitly lists CC BY4.0; data itself is the published archive, not merely a journal article.",
+      "deployment_compatible": true,
+      "archive_hash_locally_verified": true,
+      "archive_pngs": 24700,
+      "archive_class_folders": 247,
+      "archive_pngs_per_folder": 100,
+      "positive_folders": {
+        "1": "அ",
+        "2": "ஆ",
+        "3": "இ",
+        "4": "ஈ",
+        "5": "உ",
+        "6": "ஊ",
+        "7": "எ",
+        "8": "ஏ",
+        "9": "ஐ",
+        "10": "ஒ",
+        "11": "ஓ",
+        "12": "ஔ",
+        "247": "ஃ"
+      },
+      "negative_folders": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "selected_original_pngs": 3100,
+      "prepared_records": 3069,
+      "exact_duplicates_removed": 31,
+      "near_duplicate_candidates": 0,
+      "writer_metadata": "Publisher describes B.Tech students; individual writer IDs and ages unavailable.",
+      "children_verified": false,
+      "canvas_verified": false,
+      "label_evidence": "Manual inspection of source-folder-contact-sheet.png, Unicode reference, and complete selected PNG decoding. Folder mapping is an audited project mapping; no claim every sample was individually visually adjudicated.",
+      "status": "eligible_for_experimental_training_not_beta_qualified"
+    },
+    {
+      "id": "uthcd",
+      "publisher_reference": "https://arxiv.org/abs/2103.07676",
+      "status": "not_used",
+      "deployment_compatible": null,
+      "reason": "Dataset-specific license, download availability, and exact13-label mapping not verified; article permissions are not dataset permissions."
+    },
+    {
+      "id": "hp-labs-tamil",
+      "publisher_url": "https://lipitk.sourceforge.net/datasets/tamilchardata.htm",
+      "terms_url": "https://lipitk.sourceforge.net/datasetlicense.htm",
+      "status": "excluded",
+      "deployment_compatible": false,
+      "reason": "Publisher terms restrict use to research and restrict redistribution. No expanded permission obtained."
+    },
+    {
+      "id": "font-generated-tamil-mnist",
+      "reference": "https://arxiv.org/abs/2006.08367",
+      "status": "not_used",
+      "human_handwriting": false,
+      "reason": "Synthetic font/augmentation source could be supplementary only; not a human handwriting benchmark."
+    }
+  ],
+  "gate": {
+    "coverage_complete": true,
+    "deployment_compatible": true,
+    "ready_for_training": true,
+    "beta_qualified": false
+  },
+  "qualification": {
+    "accuracy": "not_measured",
+    "ubuntu_performance": "not_measured",
+    "children_canvas_accuracy": "not_established"
+  }
+}

@@ -1,0 +1,3555 @@
+{
+  "candidate": "tamil-symbols-0.1.0",
+  "beta_qualified": false,
+  "hardware": {
+    "cpu": "Apple M1 Pro",
+    "memory_gib": 32,
+    "logical_cpus": 8,
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "selection": "Validation only; held-out test evaluated once after settings froze",
+  "experiments": [
+    {
+      "name": "candidate-001",
+      "config": {
+        "seed": 42,
+        "head_epochs": 2,
+        "fine_epochs": 20,
+        "batch_size": 32,
+        "head_lr": 0.001,
+        "fine_lr": 0.0001,
+        "weight_decay": 0.0001,
+        "device": "auto",
+        "pretrained": true,
+        "augment": true
+      },
+      "device": "mps",
+      "best_epoch": 21,
+      "validation_macro_recall": 0.928205132484436,
+      "sum_epoch_seconds": 412.74951253982726
+    },
+    {
+      "name": "candidate-002-bn-frozen",
+      "config": {
+        "seed": 42,
+        "head_epochs": 2,
+        "fine_epochs": 20,
+        "batch_size": 32,
+        "head_lr": 0.001,
+        "fine_lr": 0.0001,
+        "weight_decay": 0.0001,
+        "device": "auto",
+        "pretrained": true,
+        "augment": true,
+        "freeze_batch_norm": true
+      },
+      "device": "mps",
+      "best_epoch": 6,
+      "validation_macro_recall": 0.9794871807098389,
+      "sum_epoch_seconds": 402.0700256261043
+    }
+  ],
+  "evaluation": {
+    "positive_count": 195,
+    "negative_count": 270,
+    "overall_accuracy": 0.9538461538461539,
+    "per_symbol": {
+      "அ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "ஆ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "இ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "ஈ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "உ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "ஊ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "எ": {
+        "count": 15,
+        "correct": 12,
+        "accuracy": 0.8
+      },
+      "ஏ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "ஐ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "ஒ": {
+        "count": 15,
+        "correct": 10,
+        "accuracy": 0.6666666666666666
+      },
+      "ஓ": {
+        "count": 15,
+        "correct": 14,
+        "accuracy": 0.9333333333333333
+      },
+      "ஔ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "ஃ": {
+        "count": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      }
+    },
+    "confusion_matrix": {
+      "அ": {
+        "அ": 15,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஆ": {
+        "அ": 0,
+        "ஆ": 15,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "இ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 15,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஈ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 15,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "உ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 15,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஊ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 15,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "எ": {
+        "அ": 1,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 2,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 12,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஏ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 15,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஐ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 15,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஒ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 10,
+        "ஓ": 5,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஓ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 1,
+        "ஓ": 14,
+        "ஔ": 0,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஔ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 15,
+        "ஃ": 0,
+        "unrecognized": 0
+      },
+      "ஃ": {
+        "அ": 0,
+        "ஆ": 0,
+        "இ": 0,
+        "ஈ": 0,
+        "உ": 0,
+        "ஊ": 0,
+        "எ": 0,
+        "ஏ": 0,
+        "ஐ": 0,
+        "ஒ": 0,
+        "ஓ": 0,
+        "ஔ": 0,
+        "ஃ": 15,
+        "unrecognized": 0
+      }
+    },
+    "valid_rejection_rate": 0.0,
+    "negative_acceptance_rate": 0.9629629629629629,
+    "recognition_gate_passed": false,
+    "synthetic_scribbles": {
+      "count": 100,
+      "seed": 61013,
+      "human_handwriting": false,
+      "usage": "Supplementary test only; not used for threshold selection or corpus accuracy",
+      "acceptance_rate": 0.17,
+      "predictions": [
+        {
+          "id": "synthetic-scribble-61013-0000",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0001",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0002",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0003",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0004",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0005",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0006",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0007",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0008",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0009",
+          "prediction": "ஏ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0010",
+          "prediction": "ஊ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0011",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0012",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0013",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0014",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0015",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0016",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0017",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0018",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0019",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0020",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0021",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0022",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0023",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0024",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0025",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0026",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0027",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0028",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0029",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0030",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0031",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0032",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0033",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0034",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0035",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0036",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0037",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0038",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0039",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0040",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0041",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0042",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0043",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0044",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0045",
+          "prediction": "ஈ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0046",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0047",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0048",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0049",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0050",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0051",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0052",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0053",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0054",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0055",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0056",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0057",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0058",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0059",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0060",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0061",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0062",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0063",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0064",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0065",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0066",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0067",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0068",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0069",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0070",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0071",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0072",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0073",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0074",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0075",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0076",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0077",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0078",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0079",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0080",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0081",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0082",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0083",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0084",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0085",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0086",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0087",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0088",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0089",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0090",
+          "prediction": "ஏ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0091",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0092",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0093",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0094",
+          "prediction": "அ"
+        },
+        {
+          "id": "synthetic-scribble-61013-0095",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0096",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0097",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0098",
+          "prediction": null
+        },
+        {
+          "id": "synthetic-scribble-61013-0099",
+          "prediction": null
+        }
+      ]
+    },
+    "predictions": [
+      {
+        "id": "sastra-00003",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00005",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00006",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00009",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00021",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00025",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00029",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00044",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00050",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00055",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00067",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00073",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00081",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00086",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00095",
+        "label": "அ",
+        "prediction": "அ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00103",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00105",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00106",
+        "label": "ஒ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00109",
+        "label": "ஒ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00121",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00125",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00129",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00144",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00150",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00155",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00167",
+        "label": "ஒ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00173",
+        "label": "ஒ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00181",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00186",
+        "label": "ஒ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00195",
+        "label": "ஒ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00203",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00205",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00206",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00209",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00221",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00225",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00229",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00244",
+        "label": "ஓ",
+        "prediction": "ஒ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00250",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00255",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00267",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00273",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00281",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00286",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00295",
+        "label": "ஓ",
+        "prediction": "ஓ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00303",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00305",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00306",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00309",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00321",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00325",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00329",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00344",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00350",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00355",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00367",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00373",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00381",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00386",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00395",
+        "label": "ஔ",
+        "prediction": "ஔ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00403",
+        "label": null,
+        "prediction": "ஐ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00405",
+        "label": null,
+        "prediction": "ஃ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00406",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00409",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00421",
+        "label": null,
+        "prediction": "ஐ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00425",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00429",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00444",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00450",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00455",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00467",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00473",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00481",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00486",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00495",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00503",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00505",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00506",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00509",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00521",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00525",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00529",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00544",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00550",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00555",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00567",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00573",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00581",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00586",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00595",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00603",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00605",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00606",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00609",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00621",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00625",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00629",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00644",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00650",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00655",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00667",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00673",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00681",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00686",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00695",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00703",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00705",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00706",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00709",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00721",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00725",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00729",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00744",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00750",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00755",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00767",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00773",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00781",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00786",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00795",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00803",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00805",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00806",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00809",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00821",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00825",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00829",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00844",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00850",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00855",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00867",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00873",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00881",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00886",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00895",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-00903",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-00905",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-00906",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-00909",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-00921",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-00925",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-00929",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-00944",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-00950",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-00955",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-00967",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-00973",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-00981",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-00986",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-00995",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01003",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01005",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01006",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01009",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01021",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01025",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01029",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01044",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01050",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01055",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01067",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01073",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01081",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01086",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01095",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01103",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01105",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01106",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01109",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01121",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01125",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01129",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01144",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01150",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01155",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01167",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01173",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01181",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01186",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01195",
+        "label": "ஆ",
+        "prediction": "ஆ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01203",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01205",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01206",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01209",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01221",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01225",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01229",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01244",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01250",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01255",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01267",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01273",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01281",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01286",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01295",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01303",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01305",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01306",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01309",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01321",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01325",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01329",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01344",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01350",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01355",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01367",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01373",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01381",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01386",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01395",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01403",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01405",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01406",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01409",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01421",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01425",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01429",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01444",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01450",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01455",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01467",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01473",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01481",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01486",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01495",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01503",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01505",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01506",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01509",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01521",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01525",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01529",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01544",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01550",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01555",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01567",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01573",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01581",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01586",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01595",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01603",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01605",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01606",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01609",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01621",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01625",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01629",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01644",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01650",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01655",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01667",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01673",
+        "label": null,
+        "prediction": "ஏ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01681",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01686",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01695",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01703",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01705",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01706",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01709",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01721",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01725",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01729",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01744",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01750",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01755",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01767",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01773",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01781",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01786",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01795",
+        "label": "ஃ",
+        "prediction": "ஃ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01803",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01805",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01806",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01809",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01821",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01825",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01829",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01844",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01850",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01855",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01867",
+        "label": null,
+        "prediction": "ஃ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01873",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01881",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01886",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01895",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-01903",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-01905",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-01906",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-01909",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-01921",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-01925",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-01929",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-01944",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-01950",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-01955",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-01967",
+        "label": null,
+        "prediction": null,
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-01973",
+        "label": null,
+        "prediction": "ஊ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-01981",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-01986",
+        "label": null,
+        "prediction": "இ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-01995",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02003",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02005",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02006",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02009",
+        "label": null,
+        "prediction": "ஓ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02021",
+        "label": null,
+        "prediction": "ஐ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02025",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02029",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02044",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02050",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02055",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02067",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02073",
+        "label": null,
+        "prediction": "ஐ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02081",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02086",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02095",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02103",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02105",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02106",
+        "label": null,
+        "prediction": "அ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02109",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02121",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02125",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02129",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02144",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02150",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02155",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02167",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02173",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02181",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02186",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02195",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02203",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02205",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02206",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02209",
+        "label": null,
+        "prediction": "ஃ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02221",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02225",
+        "label": null,
+        "prediction": "உ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02229",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02244",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02250",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02255",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02267",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02273",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02281",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02286",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02295",
+        "label": null,
+        "prediction": "ஒ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02303",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02305",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02306",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02309",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02321",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02325",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02329",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02344",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02350",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02355",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02367",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02373",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02381",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02386",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02395",
+        "label": "இ",
+        "prediction": "இ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02403",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02405",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02406",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02409",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02421",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02425",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02429",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02444",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02450",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02455",
+        "label": null,
+        "prediction": "ஆ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02467",
+        "label": null,
+        "prediction": "எ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02473",
+        "label": null,
+        "prediction": "ஈ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02481",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02486",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02495",
+        "label": null,
+        "prediction": "ஔ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02503",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02505",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02506",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02509",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02521",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02525",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02529",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02544",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02550",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02555",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02567",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02573",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02581",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02586",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02595",
+        "label": "ஈ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02603",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02605",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02606",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02609",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02621",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02625",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02629",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02644",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02650",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02655",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02667",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02673",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02681",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02686",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02695",
+        "label": "உ",
+        "prediction": "உ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02703",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02705",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02706",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02709",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02721",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02725",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02729",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02744",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02750",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02755",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02767",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02773",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02781",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02786",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02795",
+        "label": "ஊ",
+        "prediction": "ஊ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02803",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02805",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02806",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02809",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02821",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02825",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02829",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02844",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02850",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02855",
+        "label": "எ",
+        "prediction": "அ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02867",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02873",
+        "label": "எ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02881",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02886",
+        "label": "எ",
+        "prediction": "எ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02895",
+        "label": "எ",
+        "prediction": "ஈ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-02903",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-02905",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-02906",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-02909",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-02921",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-02925",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-02929",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-02944",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-02950",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-02955",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-02967",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-02973",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-02981",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-02986",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-02995",
+        "label": "ஏ",
+        "prediction": "ஏ",
+        "source_group": "sastra-page-096"
+      },
+      {
+        "id": "sastra-03003",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-012"
+      },
+      {
+        "id": "sastra-03005",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-014"
+      },
+      {
+        "id": "sastra-03006",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-015"
+      },
+      {
+        "id": "sastra-03009",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-018"
+      },
+      {
+        "id": "sastra-03021",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-029"
+      },
+      {
+        "id": "sastra-03025",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-032"
+      },
+      {
+        "id": "sastra-03029",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-036"
+      },
+      {
+        "id": "sastra-03044",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-004"
+      },
+      {
+        "id": "sastra-03050",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-055"
+      },
+      {
+        "id": "sastra-03055",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-005"
+      },
+      {
+        "id": "sastra-03067",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-070"
+      },
+      {
+        "id": "sastra-03073",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-076"
+      },
+      {
+        "id": "sastra-03081",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-083"
+      },
+      {
+        "id": "sastra-03086",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-088"
+      },
+      {
+        "id": "sastra-03095",
+        "label": "ஐ",
+        "prediction": "ஐ",
+        "source_group": "sastra-page-096"
+      }
+    ],
+    "onnx_max_logit_error": 5.5789947509765625e-05,
+    "unseen_writer_verified": false,
+    "children_verified": false,
+    "canvas_verified": false,
+    "ubuntu_latency_verified": false,
+    "negative_scope": "Unsupported Tamil mei; separate synthetic scribbles; no human scribble benchmark"
+  },
+  "source_breakdown": {
+    "mendeley-6zcpgchvmx-v1": {
+      "supported_test_samples": 195,
+      "correct": 186,
+      "unsupported_test_samples": 270,
+      "unsupported_accepted": 260,
+      "writer_ids_available": false,
+      "children_verified": false,
+      "canvas_verified": false
+    }
+  }
+}

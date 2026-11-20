@@ -1,0 +1,86 @@
+{
+  "counts": {
+    "அ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஆ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "இ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஈ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "உ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஊ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "எ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஏ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஐ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஒ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஓ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஔ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    },
+    "ஃ": {
+      "train": 69,
+      "test": 15,
+      "validation": 15
+    }
+  },
+  "negative_counts": {
+    "train": 1242,
+    "test": 270,
+    "validation": 270
+  },
+  "total_records": 3069,
+  "gate": {
+    "coverage_complete": true,
+    "deployment_compatible": true,
+    "ready_for_training": true,
+    "beta_qualified": false
+  },
+  "limitations": [
+    "page-disjoint, not verified writer-disjoint",
+    "student scanned handwriting; child and browser-canvas accuracy unverified",
+    "near-duplicate candidates conservatively grouped; not all visually adjudicated"
+  ]
+}
